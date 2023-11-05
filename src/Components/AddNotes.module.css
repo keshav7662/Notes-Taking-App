@@ -1,0 +1,65 @@
+
+.popup-form {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.notes-name {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* margin-left: 0.5rem; */
+}
+.notes-name > input {
+    width: 60%;
+    border-radius: 1rem;
+    padding:0.4rem 1rem;
+    border: 0.5px solid slategrey;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.notes-color {
+    /* margin-left: 0.5rem; */
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.color-options {
+    display: flex;
+    align-items: center;
+    gap:1.2rem;
+    
+}
+.color-button {
+    width: 1.3rem;
+    height:1.3rem;
+    border-radius: 50%;
+    border-style: none;
+    cursor: pointer;
+}
+.color-button:hover {
+    transform: scale(1.5);
+    transition: 200ms;
+}
+.create-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+.create-btn > button {
+    background-color: #000;
+    color: #fff;
+    padding: 0.2rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.07rem;
+    margin-right: 0.8rem;
+    border:none;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
