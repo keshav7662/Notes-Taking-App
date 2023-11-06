@@ -3,9 +3,11 @@
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
-    border-radius: 1rem 0rem 0rem 1rem;
-    padding: 0rem 1rem;
-    
+    border-radius: 1rem 0rem 0rem 1rem;    
+    padding: 0.8rem 1rem;
+}
+.titles h4 {
+    margin: 0;
 }
 .short-name {
     width: 1.2rem;
@@ -15,8 +17,13 @@
     text-align: center;
     color: #fff;
     font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .full-name{
     font-size: 1.2rem;
     font-weight: 500;
 }
+

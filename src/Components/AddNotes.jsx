@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './AddNotes.module.css';
 const AddNotes = (props) => {
-    const [color,setColor] = useState('');
-    const [name,setName] = useState('');
-    const [error,setError] = useState('');
+    const [color, setColor] = useState('');
+    const [name, setName] = useState('');
+    const [error, setError] = useState('');
 
     const changeColor = (getColor) => {
         setColor(getColor);
@@ -13,24 +13,23 @@ const AddNotes = (props) => {
         setName(getName);
     }
     const submitForm = () => {
-        if(name != '' && color != '') {
+        if (name != '' && color != '') {
             const formdata = {};
             formdata.name = name;
             formdata.color = color;
-            props.setGroups([...props.groups,formdata])
+            props.setGroups([...props.groups, formdata])
             props.setPopupOpen(false);
-            localStorage.setItem('groups',JSON.stringify([...props.groups,formdata]))
+            localStorage.setItem('groups', JSON.stringify([...props.groups, formdata]))
             setError(false);
         } else {
             setError(true);
         }
     }
+
     return (
 
         <>
-        
             <div className={styles['popup-form']}>
-
                 <h3>Create New Notes group</h3>
                 <div className={styles['notes-name']}>
                     <label htmlFor="group-name"><h3>Group Name</h3></label>
@@ -53,14 +52,13 @@ const AddNotes = (props) => {
                             onClick={() => changeColor('#F19576')}></button>
                         <button className={styles['color-button']} style={{ backgroundColor: '#0047FF' }}
                             onClick={() => changeColor('#0047FF')}></button>
-                        <button className={styles['color-button']} style={{ backgroundColor: '#6691FF' }}
-                            onClick={() => changeColor('#6691FF')}></button>
+                        <button className={styles['color-button']} style={{ backgroundColor: '#dc143c' }}
+                            onClick={() => changeColor('#dc143c')}></button>
                     </div>
                 </div>
                 {error ? <span style={{ color: 'red' }}>Required!</span> : ''}
                 <div className={styles['create-btn']}>
-                    <button
-                        onClick={submitForm}>Create</button>
+                    <button onClick={submitForm}>Create</button>
                 </div>
             </div>
         </>

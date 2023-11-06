@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styles from './Title.module.css'
-const Title = ({ titleData,selectedTitle,setSelectedTitle, setDisplayPoster }) => {
+const Title = ({ titleData,selectedTitle,setSelectedTitle, setDisplayPoster, setShowChatContainer }) => {
 
   const shortName = titleData.name.substring(0, 2).toUpperCase();
   const fullName = titleData.name;
@@ -9,10 +9,9 @@ const Title = ({ titleData,selectedTitle,setSelectedTitle, setDisplayPoster }) =
   const setTitle = () => {
     setSelectedTitle(titleData);
     setDisplayPoster(false);
+    setShowChatContainer(true);
   }
   const selected = titleData === selectedTitle ? '#F7ECDC':''
-  console.log(titleData)
-  console.log(selectedTitle)
   return (
     <>
       <div className={styles.titles} onClick={setTitle} style={{backgroundColor:selected}}>

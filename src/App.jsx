@@ -1,6 +1,11 @@
+import Home from "./Pages/Home"
 function App() {
   return (
-    <h1>Hello From React</h1>
+    <>
+      <Home />
+    </>
+    
+
   )
 }
 
