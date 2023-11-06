@@ -52,7 +52,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className={`${styles['notes-details']} ${showChatContainer ? styles['block'] : styles['hidden']}`}>ar
+                <div className={`${styles['notes-details']} ${showChatContainer ? styles['block'] : styles['hidden']}`}>
                     {
                         displayPoster ? (
                             <div className={styles['poster-container']}>

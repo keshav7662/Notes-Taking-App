@@ -91,6 +91,7 @@ html,body{
     opacity: 0.4;
 }
 .encryption-text{
+    margin-top: 5rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
