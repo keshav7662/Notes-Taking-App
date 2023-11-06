@@ -86,7 +86,7 @@ nav {
     }
     .chat-area {
         background-color: #F7ECDC;
-        height: 68%;
+        height: 65%;
         padding: 0.3rem 1rem; 
         text-align: justify;
         overflow-y: auto;
