@@ -97,12 +97,9 @@ html,body{
     gap: 0.5rem;
 }
 @media ((min-width:320px) and (max-width:430px)){
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
     .notes-title {
         width: 100%;
+        height: 100%;
     }
     .poster-container {
         display: none;
