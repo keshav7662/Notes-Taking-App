@@ -1,4 +1,3 @@
-
 .popup-form {
     position: absolute;
     top: 30%;
@@ -11,122 +10,139 @@
     border-radius: 5px;
     box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.25);
 }
+
 .popup-form h3 {
     font-size: 1rem;
 }
+
 .notes-name {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.notes-name > input {
+
+.notes-name>input {
     width: 55%;
     border-radius: 1rem;
-    padding:0.4rem 1rem;
+    padding: 0.4rem 1rem;
     border: 0.5px solid slategrey;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
 }
+
 .notes-color {
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
+
 }
 
 .color-options {
     display: flex;
     align-items: center;
-    gap:0.8rem;   
+    gap: 0.8rem;
 }
+
 .color-button {
     width: 1.3rem;
-    height:1.3rem;
+    height: 1.3rem;
     border-radius: 50%;
     border-style: none;
     cursor: pointer;
 }
+
 .color-button:hover {
     transform: scale(1.5);
     transition: 200ms;
 }
+
 .create-btn {
     display: flex;
     justify-content: flex-end;
 }
-.create-btn > button {
+
+.create-btn>button {
     background-color: #000;
     color: #fff;
     padding: 0.2rem 2rem;
     border-radius: 0.5rem;
     font-size: 1rem;
     letter-spacing: 0.07rem;
-    border:none;
+    border: none;
     margin-bottom: 0.5rem;
     cursor: pointer;
 }
 
+@media((min-width:0px) and (max-width:505px)) {
 
-@media((min-width:0px) and (max-width:505px)){
-    
-.popup-form {
-    top: 30%;
-    left: 2%;
-    right: 1%;
-    padding: 0 0.3rem;
-    width: 70%;
-    margin: auto;
-}
-.notes-name {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    
-}
-.popup-form h3 {
-    font-size: 0.8rem;
-}
-.popup-form>h3{
-    font-size: 1rem;
-    text-align: center;
-}
-.notes-name > input {
-    width: 50%;
-    padding:0.3rem 0.7rem;
-}
-.notes-name > input::placeholder {
-    font-size: 0.6rem;
-}
-.notes-color {
-    gap: 1rem;
+    .popup-form {
+        top: 30%;
+        left: 2%;
+        right: 1%;
+        padding: 0 0.3rem;
+        width: 70%;
+        margin: auto;
+    }
 
-}
-.color-options {
-    gap:0.3rem;
-    
-}
-.color-button {
-    width: 1rem;
-    height:1rem;
-}
-.create-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0.5rem;
-    
-}
-.create-btn > button {
-    padding: 0.3rem 1.5rem;
-    font-size: 0.7rem;
-}
+    .notes-name {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+    }
+
+    .popup-form h3 {
+        font-size: 0.8rem;
+    }
+
+    .popup-form>h3 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .notes-name>input {
+        width: 50%;
+        padding: 0.3rem 0.7rem;
+    }
+
+    .notes-name>input::placeholder {
+        font-size: 0.6rem;
+    }
+
+    .notes-color {
+        gap: 1rem;
+
+    }
+
+    .color-options {
+        gap: 0.3rem;
+
+    }
+
+    .color-button {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .create-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5rem;
+
+    }
+
+    .create-btn>button {
+        padding: 0.3rem 1.5rem;
+        font-size: 0.7rem;
+    }
 
 }
 
 @media((min-width:1000px) and (max-width:1200px)) {
-    
-.popup-form {
-    
-    width: 30%;
-  
-}
+
+    .popup-form {
+
+        width: 30%;
+
+    }
 }

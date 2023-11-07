@@ -1,21 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Roboto:wght@400;500;700;900&family=Single+Day&display=swap');
-html,body{
+
+html,
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto';
 }
+
 .container {
-    height:100vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
 }
+
 .notes-title {
     background-color: #fff;
     width: 30%;
     height: 100%;
+    overflow-y: auto;
 }
-.notes-title > h2 {
+
+.notes-title>h2 {
     padding: 0rem 1rem;
 }
 
@@ -26,7 +32,8 @@ html,body{
     margin-left: 2rem;
     /* padding-left: 0.5rem; */
 }
-.groups > button {
+
+.groups>button {
     width: 75%;
     background-color: #000;
     display: flex;
@@ -39,19 +46,22 @@ html,body{
     border: none;
     margin-left: 1rem;
 }
-.groups > button > span {
+
+.groups>button>span {
     color: #fff;
     font-size: 1.2rem;
 }
+
 .created-groups {
     display: flex;
     flex-direction: column;
-    /* gap: 1rem; */
 }
+
 .notes-details {
     width: 70%;
     height: 100%;
 }
+
 .poster-container {
     height: 100%;
     width: 100%;
@@ -60,80 +70,94 @@ html,body{
     align-items: center;
     background-color: #F7ECDC
 }
+
 .notes-poster {
     width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.notes-poster > img {
+
+.notes-poster>img {
     width: 100%;
 }
-.notes-poster > h3 {
+
+.notes-poster>h3 {
     font-size: 2rem;
     font-weight: 400;
-} 
-.notes-poster >p {
+}
+
+.notes-poster>p {
     padding: 0rem 1.2rem;
     font-size: 1.2em;
     font-weight: 400;
-    
+
 }
+
 .chat-container {
     height: 100%;
     width: 100%;
 }
+
 .notes-chat {
     height: 100%;
     width: 100%;
 }
+
 .background-opacity {
     opacity: 0.4;
 }
-.encryption-text{
+
+.encryption-text {
     margin-top: 3rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
-@media ((min-width:320px) and (max-width:430px)){
+
+@media ((min-width:320px) and (max-width:430px)) {
     .notes-title {
         width: 100%;
-        height: 100%;
+        height: 100vh;
     }
+
     .poster-container {
         display: none;
     }
+
     .groups {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
         margin: 0 1rem;
     }
-    .groups > button{
+
+    .groups>button {
         width: 90%;
     }
+
     .block {
         display: block;
     }
-    .hidden{
+
+    .hidden {
         display: none;
     }
+
     .created-groups {
         display: flex;
         flex-direction: column;
         gap: 0rem;
     }
-    .notes-details{
+
+    .notes-details {
         width: 100%;
         height: 100%;
     }
-    
-    
-
 }
+
 @media ((min-width:1000px) and (max-width:1155px)) {
-    .groups > button {
+    .groups>button {
         width: 90%;
         background-color: #000;
         display: flex;
