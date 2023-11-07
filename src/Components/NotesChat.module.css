@@ -32,7 +32,7 @@ nav {
     height: 56%;
     padding: 0.3rem 2rem;
     text-align: justify;
-    overflow-y: auto;
+    overflow-y: auto; 
 }
 
 .text-area {
